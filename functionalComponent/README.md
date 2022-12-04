@@ -1,21 +1,27 @@
-# Functional Components
+# Class Components
 ```
-Create Functional Components in simple 3 steps:
+Create Class Components in simple 4 steps:
 Import React
 import react from 'react';
-Create Javescript Functions which return JSX
-function Header(){
+Create Javescript class which extends from React.Component and create render methond which return JSX
+Class Header extends React.Component{
+render(){
 return (
-<h1> This functional Header Component.</h1>
-)}
-Export Function
+<h1> This class Header Component.</h1>
+)
+}
+}
+Export class Header
 export default Header
 Conclusion:
 import react from 'react';
 
-function Header(){
+Class Header extends React.Component{
+render(){
 return (
-<h1> This functional Header Component.</h1>
-)}
+<h1> This class Header Component.</h1>
+)
+}
+}
 export default Header;
 ```
