@@ -2,7 +2,7 @@ import React from 'react'
 
 function ChildC({name}) {
   return (
-    <div>{name.name}</div>
+    <div>{name}</div>
   )
 }
 
