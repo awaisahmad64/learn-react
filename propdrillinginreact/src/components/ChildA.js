@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
+import { useMemo } from 'react';
 import ChlidB from './ChlidB';
 
 function ChildA() {
   const [add, setAdd] = useState(0);
   const [minus, setMinus] = useState(100);
-  const multipulication = () => {
-    console.log('mul run');
-    return add * 4;
-  };
+  const multipulication = useMemo(
+    function mul() {
+      console.log('mul run');
+      return add * 4;
+    },[add]
+  );
   return (
     <div>
       <ChlidB />
       <h1>Learm useMemo</h1>
-      {multipulication()}
+      {multipulication}
       <br />
       <button
         onClick={() => {
