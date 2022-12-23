@@ -1,26 +1,14 @@
-import React from 'react';
+import React ,{useContext} from 'react';
 import { data, data1 } from './App';
 
 function ChildC() {
+  const firstName = useContext(data);
+  const lastName = useContext(data1);
   return (
     <>
-      <data.Consumer>
-        {(name) => {
-          return (
-            <>
-              <data1.Consumer>
-                {(lastName) => {
-                  return (
-                    <h1>
-                      Welocme {name} {lastName}
-                    </h1>
-                  );
-                }}
-              </data1.Consumer>
-            </>
-          );
-        }}
-      </data.Consumer>
+      <h1>
+        Welcome {firstName} {lastName}
+      </h1>
     </>
   );
 }
