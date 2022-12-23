@@ -1,12 +1,12 @@
-import React from 'react'
-import ChlidB from './ChlidB'
+import React from 'react';
+import ChlidB from './ChlidB';
 
-function childA({name}) {
+function childA() {
   return (
     <div>
-        <ChlidB name={name} />
+      <ChlidB />
     </div>
-  )
+  );
 }
 
-export default childA
+export default childA;

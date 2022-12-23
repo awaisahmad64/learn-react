@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ChildA from './ChildA';
 
+const data = createContext();
 function App() {
   let name = 'Awais';
   return (
-    <div>
-      <ChildA name={name} />
-    </div>
+    <>
+      <data.Provider value={name}>
+        <ChildA />
+      </data.Provider>
+    </>
   );
 }
-
 export default App;
+export {data};

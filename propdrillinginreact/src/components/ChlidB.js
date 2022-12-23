@@ -1,10 +1,10 @@
 import React from 'react'
 import ChildC from './ChildC'
 
-function ChlidB({name}) {
+function ChlidB() {
   return (
     <div>
-        <ChildC name={name} />
+        <ChildC/>
     </div>
   )
 }
