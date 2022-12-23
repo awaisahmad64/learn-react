@@ -2,15 +2,19 @@ import React, { createContext } from 'react';
 import ChildA from './ChildA';
 
 const data = createContext();
+const data1 = createContext();
 function App() {
   let name = 'Awais';
+  let lastName = 'Ahmad';
   return (
     <>
       <data.Provider value={name}>
-        <ChildA />
+        <data1.Provider value={lastName}>
+          <ChildA />
+        </data1.Provider>
       </data.Provider>
     </>
   );
 }
 export default App;
-export {data};
+export { data, data1 };
