@@ -1,5 +1,6 @@
 import React, { createContext } from 'react';
 import ChildA from './ChildA';
+import PrevState from './PrevState';
 
 const data = createContext();
 const data1 = createContext();
@@ -11,6 +12,7 @@ function App() {
       <data.Provider value={name}>
         <data1.Provider value={lastName}>
           <ChildA />
+          <PrevState/>
         </data1.Provider>
       </data.Provider>
     </>
