@@ -9,7 +9,7 @@ export default class LifeCycle extends Component {
   }
   componentDidMount() {
     // Lifecycle func - when component will mounts / loads
-    console.log('The app component loaded.');
+    console.log('componentDidMount');
   }
   componentDidUpdate(prevProps) {
     // Lifecycle func - when component props change
@@ -22,7 +22,7 @@ export default class LifeCycle extends Component {
       <div>
         <center>
           <h1>useEffect using class component</h1>
-          <p>{windowWidth}</p>
+          <p>{this.state.windowWidth}</p>
         </center>
       </div>
     );
