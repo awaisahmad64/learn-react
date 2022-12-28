@@ -23,7 +23,7 @@ function ReducerHook() {
     dispatch({ type: ACTIONS.INCREMENT });
   }
   function decrement() {
-    dispatch({ type: ACTIONS.decrement });
+    dispatch({ type: ACTIONS.DECREMENT });
   }
   return (
     <div>
