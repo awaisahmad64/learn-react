@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import RenderCount from './RenderCount';
 import UncontrolledComponents from './UncontrolledComponents';
 // controlled component controlled by react
 function ControlledComponents() {
@@ -12,7 +13,7 @@ function ControlledComponents() {
     // e.target is input object have name and value and we are destructuring  object, name will store the name value like in first case it will be name and second it will be password, we structure our state object same as we use in form handling. you can also destruct type let {name,value,type} =e.target;
     // you can check log, console.log(name,value,type)
     setFormInputData((prev) => {
-    /*let name = 'name';
+      /*let name = 'name';
       let value = 'Awais';
       const obj = {
       [name]: value,
@@ -59,6 +60,11 @@ function ControlledComponents() {
         <p>Which controlled by direct DOM</p>
       </center>
       <UncontrolledComponents />
+      <center>
+        Component Render
+        <RenderCount />
+        Times
+      </center>
     </div>
   );
 }
