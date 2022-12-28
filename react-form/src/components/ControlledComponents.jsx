@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReducerHook from './ReducerHook';
 import RenderCount from './RenderCount';
 import UncontrolledComponents from './UncontrolledComponents';
 // controlled component controlled by react
@@ -65,6 +66,7 @@ function ControlledComponents() {
         <RenderCount />
         Times
       </center>
+      <ReducerHook />
     </div>
   );
 }
