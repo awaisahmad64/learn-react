@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MultipeFieldData from './MultipeFieldData';
 import ReducerHook from './ReducerHook';
 import RenderCount from './RenderCount';
 import UncontrolledComponents from './UncontrolledComponents';
@@ -67,6 +68,7 @@ function ControlledComponents() {
         Times
       </center>
       <ReducerHook />
+      <MultipeFieldData/>
     </div>
   );
 }
