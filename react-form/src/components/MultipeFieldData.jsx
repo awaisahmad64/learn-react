@@ -1,7 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 
 function MultipeFieldData() {
-  const [inputData, setInputData] = React.useState({
+  const [inputData, setInputData] =useState({
     name: '',
     password: '',
     email: '',
