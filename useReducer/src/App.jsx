@@ -1,6 +1,5 @@
 import { useReducer } from 'react';
-import NavScrollExample from './NavScrollExample';
-import Header from './NavScrollExample';
+import Autho from './Autho';
 const reducer = (state, action) => {
   switch (action.type) {
     case 'decrement':
@@ -22,7 +21,7 @@ function App() {
 
   return (
     <>
-      <NavScrollExample/>
+      <Autho/>
       <center>
         <h1>UseReducer Here</h1>
         <button onClick={decrement}>-</button>
