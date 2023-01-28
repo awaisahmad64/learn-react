@@ -29,11 +29,31 @@
 .box .title {
   border-bottom: 1px solid #d5e0d5;
   padding: 0.5rem 0;
+  position: relative;
 }
+
 .box .description {
   padding: 1.5rem;
   display: none;
 }
 .box .description-active {
   display: block;
+}
+.plusNotShow {
+  display: none;
+}
+.iconPosition {
+  position: absolute;
+  top: 3px;
+  right: 1rem;
+  font-size: 2rem;
+}
+.iconPositionMinus {
+  position: absolute;
+  top: 1px;
+  right: 1rem;
+  font-size: 2rem;
+}
+.minusNotShow {
+  display: none;
 }
