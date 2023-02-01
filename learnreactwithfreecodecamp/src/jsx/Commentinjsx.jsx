@@ -5,6 +5,9 @@ function Commentinjsx() {
     <>
       {/* The div should have a class of myDiv. */}
       <div className="myDiv">Hello React Developers</div>
+      <hr/>
+      <span> First Line</span><br/>
+      <span> Second Line</span>
     </>
   );
 }
