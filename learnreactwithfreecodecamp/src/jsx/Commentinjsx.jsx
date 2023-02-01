@@ -2,15 +2,10 @@ import React from 'react';
 
 function Commentinjsx() {
   return (
-    <div>
-      {/* single line comment in jsx */}
-      {/* 
-            Multiline comments in jsx 
-            Multiline comments in jsx 
-            Multiline comments in jsx 
-        */}
-      Hello React Developers
-    </div>
+    <>
+      {/* The div should have a class of myDiv. */}
+      <div className="myDiv">Hello React Developers</div>
+    </>
   );
 }
 
