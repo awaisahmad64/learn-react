@@ -20,4 +20,4 @@ class BindThis extends React.Component {
     );
   }
 }
-ReactDOM.createRoot(document.getElementById('root')).render(<BindThis />);
+// ReactDOM.createRoot(document.getElementById('root')).render(<BindThis />);
